@@ -71,6 +71,7 @@ body {
 	width: 110px;
 	height: 60px;
 	top: 10px;
+  z-index: 999;
 	background-image: url("../img/jogador.png");
 	position: absolute;
 	animation:p_player .9s steps(7) infinite;
@@ -112,8 +113,9 @@ body {
 	width: 51px;
 	height: 50px;
 	top: 10px;
+  left: 610px;
 	background-image: url("../img/inimigo.png");
-	position: relative;
+	position: absolute;
   margin-left: auto;
 	animation:p_inimigo 1.6s steps(12) infinite;
 
@@ -194,9 +196,10 @@ body {
 .tanque {
 	width: 77px;
 	height: 50px;
-	top: 230px;
+	top: 280px;
+  left: 590px;
 	background-image: url("../img/tanque.png");
-	position: relative;
+	position: absolute;
     margin-left: auto;
 	animation:p_tanque 1.5s steps(5) infinite;
 
@@ -230,4 +233,13 @@ body {
 @-o-keyframes p_tanque {
    from { background-position:0px; }
      to { background-position: -382px; }
+}
+
+#tiroPlayer
+{
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  z-index: 98;
+  background-image: url("../img/tiro.png");
 }
